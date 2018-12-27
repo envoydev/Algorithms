@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{1E1E7CAF-F616-44A8-A10D-9471499982E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{BEA4D335-3127-4E1F-AE9A-C6922980E7B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{BEA4D335-3127-4E1F-AE9A-C6922980E7B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{35377281-5502-42A3-A27E-40C98C960663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{2552D47A-B7A1-4207-830C-DDB69D4B1993}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{BEA4D335-3127-4E1F-AE9A-C6922980E7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEA4D335-3127-4E1F-AE9A-C6922980E7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEA4D335-3127-4E1F-AE9A-C6922980E7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35377281-5502-42A3-A27E-40C98C960663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35377281-5502-42A3-A27E-40C98C960663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35377281-5502-42A3-A27E-40C98C960663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35377281-5502-42A3-A27E-40C98C960663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2552D47A-B7A1-4207-830C-DDB69D4B1993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2552D47A-B7A1-4207-830C-DDB69D4B1993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2552D47A-B7A1-4207-830C-DDB69D4B1993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2552D47A-B7A1-4207-830C-DDB69D4B1993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
