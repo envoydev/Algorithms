@@ -6,7 +6,7 @@ namespace DijkstrasAlgorithm
 {
     public static class DijkstrasAlgorithm
     {
-        readonly static List<string> _processed = new List<string>();
+        static List<string> _processed = new List<string>();
         const double _infinity = double.PositiveInfinity;
 
         public static void Search(IDictionary<string, Dictionary<string, double>> graph)
@@ -47,6 +47,8 @@ namespace DijkstrasAlgorithm
                     _processed.Add(node);
                     node = FindLowestCostNode(costs);
                 }
+
+                _processed.Clear();
 
                 Console.WriteLine(string.Join(", ", costs));
             }
