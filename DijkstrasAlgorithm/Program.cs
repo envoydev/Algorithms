@@ -22,7 +22,9 @@ namespace DijkstrasAlgorithm
 
             _graph.Add("fin", new Dictionary<string, double>());
 
-            Console.WriteLine("Hello World!");
+            DijkstrasAlgorithm.Search(_graph);
+
+            Console.ReadLine();
         }
     }
 }

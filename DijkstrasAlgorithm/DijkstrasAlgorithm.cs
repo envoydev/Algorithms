@@ -8,17 +8,21 @@ namespace DijkstrasAlgorithm
         readonly static List<string> _processed = new List<string>();
         const double _infinity = double.PositiveInfinity;
 
-        public static void Search(IDictionary<string, IDictionary<string, double>> graph)
+        public static void Search(IDictionary<string, Dictionary<string, double>> graph)
         {
-            var costs = new Dictionary<string, double>();
-            costs.Add("a", 6.0);
-            costs.Add("b", 2.0);
-            costs.Add("fin", _infinity);
+            var costs = new Dictionary<string, double>
+            {
+                { "a", 6.0 },
+                { "b", 2.0 },
+                { "fin", _infinity }
+            };
 
-            var parents = new Dictionary<string, string>();
-            parents.Add("a", "start");
-            parents.Add("b", "start");
-            parents.Add("fin", null);
+            var parents = new Dictionary<string, string>
+            {
+                { "a", "start" },
+                { "b", "start" },
+                { "fin", null }
+            };
 
             var node = FindLowestCostNode(costs);
             while (node != null)
