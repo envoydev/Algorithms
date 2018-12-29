@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DijkstrasAlgorithm
 {
@@ -10,39 +11,45 @@ namespace DijkstrasAlgorithm
 
         public static void Search(IDictionary<string, Dictionary<string, double>> graph)
         {
-            var costs = new Dictionary<string, double>
+            if (graph["start"].Any())
             {
-                { "a", 6.0 },
-                { "b", 2.0 },
-                { "fin", _infinity }
-            };
+                var costs = new Dictionary<string, double>();
+                var parents = new Dictionary<string, string>();
 
-            var parents = new Dictionary<string, string>
-            {
-                { "a", "start" },
-                { "b", "start" },
-                { "fin", null }
-            };
-
-            var node = FindLowestCostNode(costs);
-            while (node != null)
-            {
-                var cost = costs[node];
-                var neighbors = graph[node];
-                foreach (var n in neighbors.Keys)
+                foreach (var combination in graph["start"])
                 {
-                    var new_cost = cost + neighbors[n];
-                    if (costs[n] > new_cost)
-                    {
-                        costs[n] = new_cost;
-                        parents[n] = node;
-                    }
+                    costs.Add(combination.Key, combination.Value);
                 }
-                _processed.Add(node);
-                node = FindLowestCostNode(costs);
-            }
+                costs.Add("fin", _infinity);
 
-            Console.WriteLine(string.Join(", ", costs));
+                foreach (var combination in graph["start"])
+                {
+                    parents.Add(combination.Key, "start");
+                }
+                parents.Add("fin", null);
+
+
+                var node = FindLowestCostNode(costs);
+
+                while (node != null)
+                {
+                    var cost = costs[node];
+                    var neighbors = graph[node];
+                    foreach (var n in neighbors.Keys)
+                    {
+                        var new_cost = cost + neighbors[n];
+                        if (costs[n] > new_cost)
+                        {
+                            costs[n] = new_cost;
+                            parents[n] = node;
+                        }
+                    }
+                    _processed.Add(node);
+                    node = FindLowestCostNode(costs);
+                }
+
+                Console.WriteLine(string.Join(", ", costs));
+            }
         }
 
         static string FindLowestCostNode(Dictionary<string, double> costs)
