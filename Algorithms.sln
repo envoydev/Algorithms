@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\Quic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion", "Recursion\Recursion.csproj", "{2552D47A-B7A1-4207-830C-DDB69D4B1993}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreadthFirstSearch", "BreadthFirstSearch\BreadthFirstSearch.csproj", "{43D1E2CA-6594-4804-974B-FFFFDD76A072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreadthFirstSearch", "BreadthFirstSearch\BreadthFirstSearch.csproj", "{43D1E2CA-6594-4804-974B-FFFFDD76A072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstrasAlgorithm", "DijkstrasAlgorithm\DijkstrasAlgorithm.csproj", "{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijkstrasAlgorithm", "DijkstrasAlgorithm\DijkstrasAlgorithm.csproj", "{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedyAlgorithm", "GreedyAlgorithm\GreedyAlgorithm.csproj", "{BAE8D833-CF55-4FB5-8575-A7B2C276B433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
