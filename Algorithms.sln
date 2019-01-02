@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreadthFirstSearch", "Bread
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijkstrasAlgorithm", "DijkstrasAlgorithm\DijkstrasAlgorithm.csproj", "{CD29C3D7-4892-4AAD-9B30-B9EE68154B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreedyAlgorithm", "GreedyAlgorithm\GreedyAlgorithm.csproj", "{BAE8D833-CF55-4FB5-8575-A7B2C276B433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreedyAlgorithm", "GreedyAlgorithm\GreedyAlgorithm.csproj", "{BAE8D833-CF55-4FB5-8575-A7B2C276B433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{27D34974-08F8-4E30-A1B5-30101EC09CAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE8D833-CF55-4FB5-8575-A7B2C276B433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D34974-08F8-4E30-A1B5-30101EC09CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D34974-08F8-4E30-A1B5-30101EC09CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D34974-08F8-4E30-A1B5-30101EC09CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D34974-08F8-4E30-A1B5-30101EC09CAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
